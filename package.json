@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "re:start": "rescript build -w",
+    "start": "concurrently \"parcel ./public/index.html --open\" \"bsb -make-world -w\" "
   },
   "keywords": [
     "rescript"
@@ -12,6 +13,17 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "rescript": "*"
+    "@rescript/react": "^0.10.3",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rescript": "*",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "bs-platform": "^9.0.2",
+    "concurrently": "^7.0.0",
+    "parcel": "^2.3.2"
   }
 }

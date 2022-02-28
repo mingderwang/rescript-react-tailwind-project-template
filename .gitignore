@@ -3,3 +3,7 @@
 /lib/
 .bsb.lock
 .merlin
+.parcel-cache
+.cache
+dist
+.vercel
