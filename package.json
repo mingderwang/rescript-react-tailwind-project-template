@@ -2,15 +2,14 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
-    "re:build": "rescript",
     "clean": "rescript clean -with-deps",
-    "re:start": "rescript build -w",
-    "build": "bsb -make-world",
-    "dev": "concurrently \"parcel ./public/index.html --open\" \"bsb -make-world -w\" ",
+    "build": "rescript build",
+    "dev": "concurrently \"parcel ./public/index.html --open\" \"rescript build -w\" ",
     "start": "parcel ./public/index.html"
   },
   "keywords": [
-    "rescript"
+    "rescript",
+    "react"
   ],
   "author": "",
   "license": "MIT",
@@ -18,14 +17,13 @@
     "@rescript/react": "^0.10.3",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.7",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rescript": "*",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
-    "bs-platform": "^9.0.2",
     "concurrently": "^7.0.0",
-    "parcel": "^2.3.2"
+    "parcel": "^2.3.2",
+    "rescript": "9.1.2"
   }
 }
