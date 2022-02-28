@@ -2,10 +2,12 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
-    "build": "rescript",
+    "re:build": "rescript",
     "clean": "rescript clean -with-deps",
     "re:start": "rescript build -w",
-    "start": "concurrently \"parcel ./public/index.html --open\" \"bsb -make-world -w\" "
+    "build": "bsb -make-world",
+    "dev": "concurrently \"parcel ./public/index.html --open\" \"bsb -make-world -w\" ",
+    "start": "parcel ./public/index.html"
   },
   "keywords": [
     "rescript"
