@@ -1,21 +1,47 @@
-# ReScript Project Template
-
-The only official ReScript starter template.
+# ReScript/React Project Template
 
 ## Installation
 
 ```sh
-npm install
+yarn
 ```
 
 ## Build
 
-- Build: `npm run build`
-- Clean: `npm run clean`
-- Build & watch: `npm run start`
+- Build: `yarn build`
+- Clean: `yarn clean`
+- Build & watch: `yarn dev`
+- Deploy: `yarn deploy`
 
 ## Run
 
 ```sh
-node src/Demo.bs.js
+yarn start
 ```
+
+## License
+ISC license
+
+## Source tree
+```
+├── README.md
+├── LICENSE.md
+├── bsconfig.json
+├── package.json
+├── public
+│   └── index.html
+├── src
+│   ├── App.res
+│   ├── Greeting.res
+│   ├── Index.res
+│   └── Test.res
+└── yarn.lock
+```
+
+## Live demo
+https://rescript-react-tailwind-project-template.vercel.app/
+
+## Resources
+* [rescript-lang.org](https://rescript-lang.org/)
+* [rescript-react](https://rescript-lang.org/docs/react/latest/introduction)
+* [playground](https://rescript-lang.org/try)

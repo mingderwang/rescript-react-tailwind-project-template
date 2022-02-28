@@ -13,7 +13,7 @@
     "react"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "@rescript/react": "^0.10.3",
     "autoprefixer": "^10.4.2",
