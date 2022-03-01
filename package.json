@@ -2,10 +2,12 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
-    "clean": "rescript clean -with-deps && rm -rf .parcel-cache",
+    "clean": "rescript clean -with-deps && rm -rf .parcel-cache lib",
     "build": "npm run clean && rescript build",
+    "build:watch": "npm run clean && rescript build -w",
     "dev": "concurrently \"parcel ./public/index.html --open\" \"rescript build -w\" ",
     "start": "parcel ./public/index.html",
+    "lazy": "parcel ./public/index.html --no-cache --open",
     "deploy": "vercel",
     "test": "jest",
     "test:watch": "jest --watch",

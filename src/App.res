@@ -1,4 +1,11 @@
+let name = "Joe"
+
+let greeting = `Hello
+World
+👋
+${name}
+`
 @react.component
 let make = () => {
-  <div> {React.string("Hello World")} </div>
+  <div> {React.string(greeting)} </div>
 }
